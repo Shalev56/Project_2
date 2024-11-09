@@ -1,0 +1,10 @@
+body {
+    background-color: #121212;
+    color: rgb(128, 128, 128);
+}
+
+main{
+    background-color: wheat;
+    min-height: 600px;
+    color: rgb(0, 0, 0);
+}
