@@ -1,13 +1,13 @@
 export default class CountryClass {
   constructor(parentSelector, country) {
     this.parent = parentSelector;
-    this.flag = country.flags.png; // Use PNG format for the flag
-    this.name = country.name.common; // Common name of the country
-    this.fullName = country.name.official; // Official name of the country
-    this.capital = country.capital ? country.capital[0] : "N/A"; // Capital
-    this.population = country.population.toLocaleString(); // Format population with commas
-    this.borders = country.borders || []; // Array of border countries
-    this.languages = Object.values(country.languages || {}).join(); // Languages spoken
+    this.flag = country.flags.png; 
+    this.name = country.name.common; 
+    this.fullName = country.name.official; 
+    this.capital = country.capital ? country.capital[0] : "N/A"; 
+    this.population = country.population.toLocaleString(); 
+    this.borders = country.borders || []; 
+    this.languages = Object.values(country.languages || {}).join(); 
   }
   
   render() {
@@ -23,7 +23,7 @@ export default class CountryClass {
       <article class="p-2 shadow overflow-hidden h-100 article">
         <img src="${this.flag}" alt="${this.name}" class="w-25 float-end ms-2">
         <h2>${this.name} (${this.fullName})</h2>
-        <div><strong>Capital:</strong> <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(this.capital)}" target="_blank">${this.capital}</a></div>
+        <div><strong>Capital:</strong>${this.capital}</div>
         <div><strong>Population:</strong> ${this.population}</div>
         <div><strong>Languages:</strong> ${this.languages || 'N/A'}</div>
         <div><strong>Borders:</strong> ${borderLinks || 'None'}</div>

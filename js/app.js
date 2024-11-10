@@ -32,11 +32,11 @@ function displayCountries(countriesToDisplay) {
 
         const col1 = document.createElement('div');
         col1.innerHTML =`<h2>Home
-        <a href="Single.html?name=Israel" class="btn btn-success" target="_blank" rel="noopener noreferrer">Israel</a>
-        <a href="Single.html?name=United States" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">United States</a>
-        <a href="Single.html?name=France" class="btn btn-primary" target="_blank" rel="noopener noreferrer">France</a>
-        <a href="Single.html?name=United Kingdom" class="btn btn-danger" target="_blank" rel="noopener noreferrer">United Kingdom</a>
-        <a href="Single.html?name=Thailand" class="btn btn-info" target="_blank" rel="noopener noreferrer">Thailand</a>
+        <a href="Single.html?name=Israel" class="btn btn-success" rel="noopener noreferrer">Israel</a>
+        <a href="Single.html?name=United States" class="btn btn-secondary" rel="noopener noreferrer">United States</a>
+        <a href="Single.html?name=France" class="btn btn-primary" rel="noopener noreferrer">France</a>
+        <a href="Single.html?name=United Kingdom" class="btn btn-danger" rel="noopener noreferrer">United Kingdom</a>
+        <a href="Single.html?name=Thailand" class="btn btn-info" rel="noopener noreferrer">Thailand</a>
         </h2>
             `;
         row1.appendChild(col1);
@@ -57,7 +57,7 @@ function displayCountries(countriesToDisplay) {
         col.innerHTML = `
             <article class="border border-light text-white p-2 shadow overflow-hidden"> 
                 <h2>${country.name.common}</h2>
-                <a href="Single.html?name=${country.name.common}" target="_blank" rel="noopener noreferrer">
+                <a href="Single.html?name=${country.name.common}" rel="noopener noreferrer">
                     <h2><img id="id_img" src="${country.flags.png}" height="180px" width="240px" alt="${country.name.common} flag"/></h2>
                 </a>
             </article>
