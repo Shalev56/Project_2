@@ -54,6 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
   fetchCountryData();
 
   document.getElementById('back_btn').addEventListener('click', () => {
-    window.location.href = 'country.html'; 
+    window.location.href = 'index.html'; 
   });
 });
